@@ -95,9 +95,29 @@ function Dashboard() {
                 </div>
             </div>
 
+            <footer className="dashboard-footer text-center">
+                <p>Developed by <a href="https://roshan27.github.io/" target="_blank" rel="noopener noreferrer">Pathan Roshan Zameer</a></p>
+            </footer>
+
             <style jsx="true">{`
         .dashboard-grid {
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        .dashboard-footer {
+          grid-column: 1 / -1;
+          margin-top: 3rem;
+          padding: 2rem 0;
+          border-top: 1px solid var(--border);
+          font-size: 0.875rem;
+          color: var(--text-muted);
+        }
+        .dashboard-footer a {
+          color: var(--primary);
+          text-decoration: none;
+          font-weight: 600;
+        }
+        .dashboard-footer a:hover {
+          text-decoration: underline;
         }
         .stat-card {
           display: flex;
